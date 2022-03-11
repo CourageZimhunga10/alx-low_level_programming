@@ -9,22 +9,22 @@
  */
 int main(void)
 {
-int num;
+	int num;
 
-num = 48;
+	num = 48;
 
-while (num < 58)
-{
-putchar(num);
+	while (num < 58)
+	{
+		putchar(num);
 
-if (num < 57)
-{
-putchar(44);
-putchar(32);
-}
-num++;
-}
+		if (num < 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		num++;
+	}
 
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }

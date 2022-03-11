@@ -9,24 +9,24 @@
  */
 int main(void)
 {
-int ansi_number;
+	int ansi_number;
 
-ansi_number = 48;
+	ansi_number = 48;
 
-while (ansi_number < 58)
-{
-putchar(ansi_number);
-ansi_number++;
-}
+	while (ansi_number < 58)
+	{
+		putchar(ansi_number);
+		ansi_number++;
+	}
 
-ansi_number = 97;
+	ansi_number = 97;
 
-while (ansi_number < 103)
-{
-putchar(ansi_number);
-ansi_number++;
-}
+	while (ansi_number < 103)
+	{
+		putchar(ansi_number);
+		ansi_number++;
+	}
 
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }

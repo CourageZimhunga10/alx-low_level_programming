@@ -8,34 +8,34 @@
  */
 int main(void)
 {
-int digit_one;
-int digit_two;
+	int digit_one;
+	int digit_two;
 
-digit_one = 47;
+	digit_one = 47;
 
-while (digit_one < 57)
-{
-digit_one++;
-digit_two = 47;
+	while (digit_one < 57)
+	{
+		digit_one++;
+		digit_two = 47;
 
-while (digit_two < 57)
-{
-digit_two++;
+		while (digit_two < 57)
+		{
+			digit_two++;
 
-if (digit_one == digit_two || digit_two <= digit_one)
-continue;
+			if (digit_one == digit_two || digit_two <= digit_one)
+				continue;
 
-putchar(digit_one);
-putchar(digit_two);
+			putchar(digit_one);
+			putchar(digit_two);
 
-if (digit_one == 56 && digit_two == 57)
-break;
+			if (digit_one == 56 && digit_two == 57)
+				break;
 
-putchar(44);
-putchar(32);
-}
-}
+			putchar(44);
+			putchar(32);
+		}
+	}
 
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }

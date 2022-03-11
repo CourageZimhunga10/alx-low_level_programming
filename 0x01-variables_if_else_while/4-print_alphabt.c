@@ -9,21 +9,21 @@
  */
 int main(void)
 {
-int ansi_number_lowercase;
+	int ansi_number_lowercase;
 
-ansi_number_lowercase = 97;
+	ansi_number_lowercase = 97;
 
-while (ansi_number_lowercase < 123)
-{
-if (ansi_number_lowercase == 'e' || ansi_number_lowercase == 'q')
-{
-ansi_number_lowercase++;
-continue;
-}
-putchar(ansi_number_lowercase);
-ansi_number_lowercase++;
-}
+	while (ansi_number_lowercase < 123)
+	{
+		if (ansi_number_lowercase == 'e' || ansi_number_lowercase == 'q')
+		{
+			ansi_number_lowercase++;
+			continue;
+		}
+		putchar(ansi_number_lowercase);
+		ansi_number_lowercase++;
+	}
 
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
