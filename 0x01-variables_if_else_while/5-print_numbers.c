@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-    int num;
+int num;
 
-    num = 0;
+num = 0;
 
-    while (num < 10)
-    {
-        printf("%d", num);
-        num++;
-    }
+while (num < 10)
+{
+printf("%d", num);
+num++;
+}
 
-    putchar('\n');
-    return (0);
+putchar('\n');
+return (0);
 }

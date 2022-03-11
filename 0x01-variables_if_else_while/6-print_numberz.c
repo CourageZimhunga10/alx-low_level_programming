@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-    int num;
+int num;
 
-    num = 48;
+num = 48;
 
-    while (num < 58)
-    {
-        putchar(num);
-        num++;
-    }
+while (num < 58)
+{
+putchar(num);
+num++;
+}
 
-    putchar('\n');
-    return (0);
+putchar('\n');
+return (0);
 }

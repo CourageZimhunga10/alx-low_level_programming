@@ -9,14 +9,14 @@
  */
 int main(void)
 {
-    int ansi_number;
-    ansi_number = 122;
-    while (ansi_number > 96)
-    {
-        putchar(ansi_number);
-        ansi_number--;
-    }
+int ansi_number;
+ansi_number = 122;
+while (ansi_number > 96)
+{
+putchar(ansi_number);
+ansi_number--;
+}
 
-    putchar('\n');
-    return (0);
+putchar('\n');
+return (0);
 }
