@@ -12,7 +12,6 @@ int _strlen(char *s)
 
 	while(c != '\0'){
 		c = s[i];
-		printf("%c", c);
 		i++;
 	}
 
