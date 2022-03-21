@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * _strlen - Gets length of passed string
  *
