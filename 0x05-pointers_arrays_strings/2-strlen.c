@@ -4,16 +4,19 @@
  * _strlen - Gets length of passed string
  *
  * @s: Pointer to a String
+ *
+ * Return: The length of @s
  */
 int _strlen(char *s)
 {
 	int i = 0;
-	char c;
+	char c = s[0];
 
-	while(c != '\0'){
-		c = s[i];
+	while (c != '\0')
+	{
 		i++;
+		c = s[i];
 	}
 
-	return (i-1);
+	return (i);
 }
