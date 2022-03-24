@@ -36,4 +36,5 @@ Add one line to this code, so that the program prints a[2] = 98, followed by a n
 ## 103-infinite_add.c
 Write a function that adds two numbers.
 
-##        
+## 104-print_buffer.c
+Write a function that prints a buffer.        
