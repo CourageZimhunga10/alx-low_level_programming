@@ -30,4 +30,7 @@ Write a function that encodes a string using rot13.
 ## 101-print_number.c
 Write a function that prints an integer.
 
-##       
+## 102-magic.c
+Add one line to this code, so that the program prints a[2] = 98, followed by a new line.
+
+##        
