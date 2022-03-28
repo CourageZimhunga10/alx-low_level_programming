@@ -18,10 +18,7 @@ Write a function that searches a string for any of a set of bytes.
 ## 7-print_chessboard.c
 Write a function that prints the chessboard.
 
-## 
 ## 5-strstr.c
 Write a function that locates a substring.
 
-## 
-
-## 
+## 8-print_diagsums.c
