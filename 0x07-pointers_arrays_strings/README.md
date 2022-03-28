@@ -27,4 +27,5 @@ Write a function that prints the sum of the two diagonals of a square matrix of 
 ## 100-set_string.c
 Write a function that sets the value of a pointer to a char.
 
-## 
+## 101-crackme_password
+Create a file that contains the password for the crackme2 executable.
