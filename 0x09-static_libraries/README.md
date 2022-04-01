@@ -30,6 +30,13 @@ _Command to create object files, sample file _putchar.c_
 _Command to create static library_
 ar libmy.a _putchar.o _islower.o _isalpha.o _abs.o _isupper.o _isdigit.o _strlen.o _puts.o _strcpy.o _atoi.o _strcat.o _strncat.o _strncpy.o _strcmp.o _memset.o _memcpy.o _strchr.o _strspn.o _strpbrk.o _strstr.o
 
+or
+
+ar rc libmy.a *.o
+
+index the library archieve
+ranlib libmy.a
+
 _Command to list the symbols stored in a static library_
     ar -t libmy.a
 or
