@@ -1,7 +1,12 @@
 #include "dog.h"
 
 /**
- * main - code entry point.
+ * init_dog - initialize struct dog datat type.
+ *
+ * @d: dog struct
+ * @name: name of dog.
+ * @age: age of dog.
+ * @owner: owner of dog.
  *
  * Return: Always 0.
  */
