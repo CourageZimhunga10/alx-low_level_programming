@@ -16,6 +16,10 @@ A compile-time unary operator and used to compute the size of its operand.
 __Example__
 Double quotation mark	\"
 
+## C system call write()
+**ssize_t write(int fildes, const void *buf, size_t nbytes);**
+A system call that is used to write data out of a buffer.
+
 # Tasks
 ## 0-preprocessor
 Script that runs a C file through the preprocessor and save the result into another file.
