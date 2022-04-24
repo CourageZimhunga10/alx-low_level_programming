@@ -1,6 +1,11 @@
 # C Programming
 
 ## 0x00. C - Hello, World
+- puts, printf, write functions, sizeof operator and C compilation.
+
+## 0x01. C - Variables, if, else, while
+
+
 ## 0x0A-argc_argv
 - argc and argv parameters in c.
 

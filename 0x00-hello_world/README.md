@@ -1,4 +1,6 @@
 # 0x00. C - Hello, World
+Introduction to C output to standard ouputs and C compilation.
+
 ## The C library function puts()
 **int puts(const char *str)**
 Writes a string to stdout up to but not including the null character. A newline character is appended to the output.
