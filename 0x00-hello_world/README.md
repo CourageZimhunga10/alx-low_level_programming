@@ -10,6 +10,9 @@ A sequence of characters that gets converted to other character which cannot be 
 **int printf(const char *format, ...)**
 The C library function int printf(const char *format, ...) sends formatted output to stdout.
 
+## C sizeof operator
+A compile-time unary operator and used to compute the size of its operand. 
+
 __Example__
 Double quotation mark	\"
 
