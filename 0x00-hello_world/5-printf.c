@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
-  * main - Program entry point
+  * main - C program that prints a string.
   *
+  * Description: Write a C program that prints exactly with proper grammar,
+  * but the outcome is a piece of art,, followed by a new line.
   * Return: 0 Always
   */
 int main(void)

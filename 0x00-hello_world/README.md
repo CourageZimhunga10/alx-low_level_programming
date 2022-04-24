@@ -6,6 +6,10 @@ Writes a string to stdout up to but not including the null character. A newline 
 ## Escape Sequences
 A sequence of characters that gets converted to other character which cannot be typed or has special meaning.
 
+## The C library function printf()
+**int printf(const char *format, ...)**
+The C library function int printf(const char *format, ...) sends formatted output to stdout.
+
 __Example__
 Double quotation mark	\"
 
