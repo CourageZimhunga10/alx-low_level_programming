@@ -3,34 +3,29 @@
 #include <time.h>
 
 /**
- * main - Code entry point
+ * main -  Program that prints the last digit of a number.
  *
  * Description: Program will assign a random number to the variable
- * n each time it is executed.
+ * n each time it is executed and print the last digit of the number.
  * Return: Always 0
  */
 int main(void)
 {
-	int n;
+	int n, last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	last_digit = (last_digit);
 
-	if ((n % 10) > 5)
-	{
+	if (last_digit > 5)
 		printf("Last digit of %d is %d and is greater than 5\n",
-			n, n % 10);
-	}
-	else if ((n % 10) < 6 && (n % 10) != 0)
-	{
+			n, last_digit);
+	else if (last_digit < 6 && last_digit != 0)
 		printf("Last digit of %d is %d and is less than 6 and not 0\n",
-			n, n % 10);
-	}
+			n, last_digit);
 	else
-	{
 		printf("Last digit of %d is %d and is 0\n",
-			n, n % 10);
-	}
+			n, last_digit);
 
 	return (0);
 }
