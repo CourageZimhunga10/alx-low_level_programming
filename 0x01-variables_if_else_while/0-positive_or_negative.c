@@ -5,7 +5,6 @@
 /**
  * main - C program to print if number is +ve, -ve or zero.
  *
- * Description: 
  * Return: Always 0
  */
 int main(void)
