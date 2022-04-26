@@ -47,6 +47,3 @@ The C preprocessor.
 - using const keyword in variables.
 
 ## 0x13. C - More singly linked lists
-
-
-
