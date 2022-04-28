@@ -34,6 +34,10 @@ Write a function that sets the value of a bit to 0 at a given index.
   - Returns: 1 if it worked, or -1 if an error occurred
 
 ## 
+Write a function that returns the number of bits you would need to flip to get from one number to another.
+  - Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
+  - You are not allowed to use the % or / operators
+
 
 
 
