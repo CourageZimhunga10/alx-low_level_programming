@@ -5,6 +5,10 @@
 /**
  * main - C program to print if number is +ve, -ve or zero.
  *
+ * Description: Program will assign a random number to the variable
+ * n each time it is executed and print if the number is +ve, -ve or
+ * zero.
+ *
  * Return: Always 0
  */
 int main(void)
