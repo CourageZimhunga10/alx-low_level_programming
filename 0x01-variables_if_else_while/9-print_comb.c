@@ -1,26 +1,24 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Program that prints all possible combinations
  *
- * Description: program that prints all possible combinations
+ * Description: Program that prints all possible combinations
  * of single-digit numbers from the ANSI
  * character set.
  * Return: Always 0
  */
 int main(void)
 {
-	int num;
+	int num = '0';
 
-	num = 48;
-
-	while (num < 58)
+	while (num <= '9')
 	{
 		putchar(num);
 
-		if (num < 57)
+		if (num < '9')
 		{
-			putchar(44);
-			putchar(32);
+			putchar(',');
+			putchar(' ');
 		}
 		num++;
 	}
