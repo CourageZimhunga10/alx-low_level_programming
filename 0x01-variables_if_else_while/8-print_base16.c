@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Program that prints all the numbers of base 16
  *
- * Description: program that prints  all the numbers of base 16
+ * Description: Program that prints  all the numbers of base 16
  * in lowercase. Prints from the ANSI
  * character set.
  * Return: Always 0
