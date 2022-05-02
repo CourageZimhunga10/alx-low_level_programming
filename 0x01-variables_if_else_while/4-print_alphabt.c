@@ -5,23 +5,24 @@
  * Description: program that prints the alphabet in lowercase,
  * and uppercase followed by a new line. Prints alphabets from
  * the ANSI character set.
+ *
  * Return: Always 0
  */
 int main(void)
 {
 	int ansi_number_lowercase;
 
-	ansi_number_lowercase = 97;
+	ansi_number_lowercase = '`';
 
-	while (ansi_number_lowercase < 123)
+	while (ansi_number_lowercase < 'z')
 	{
-		if (ansi_number_lowercase == 'e' || ansi_number_lowercase == 'q')
-		{
-			ansi_number_lowercase++;
-			continue;
-		}
-		putchar(ansi_number_lowercase);
 		ansi_number_lowercase++;
+
+		/* Skip e and q */
+		if (ansi_number_lowercase == 'e' || ansi_number_lowercase == 'q')
+			continue;
+
+		putchar(ansi_number_lowercase);
 	}
 
 	putchar('\n');
