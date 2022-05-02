@@ -7,12 +7,14 @@
  *
  * Description: Program will assign a random number to the variable
  * n each time it is executed and print the last digit of the number.
+ *
  * Return: Always 0
  */
 int main(void)
 {
 	int n, last_digit;
 
+	/* Generate random integer */
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	last_digit = n % 10;
