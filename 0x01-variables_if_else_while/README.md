@@ -2,7 +2,7 @@
 C programming concepts covered;
  - Identifiers and keywords.
  - Conditional statements if, if else, if elseif.
- - Operators Arithmentic; +, -, /, *, % Condition operators; ==, >, <, !=, >=, <= Logical operators; &, ||, !
+ - Operators Arithmentic; +, -, /, *, % Condition operators; ==, >, <, !=, >=, <= Logical operators; &, ||, ! Increment and Decrement Operators.
  - Loops while, continue
  - ANSI character set.
  - Escape Sequences \n
