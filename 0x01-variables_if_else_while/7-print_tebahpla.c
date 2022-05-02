@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Program that prints the lowercase alphabet in reverse.
  *
  * Description: program that prints the alphabet in lowercase,
  * followed by a new line in reverse. Prints alphabets from the ANSI
@@ -9,14 +9,10 @@
  */
 int main(void)
 {
-	int ansi_number;
+	int ansi_number = '{';
 
-	ansi_number = 122;
-	while (ansi_number > 96)
-	{
+	while (ansi_number-- > 'a')
 		putchar(ansi_number);
-		ansi_number--;
-	}
 
 	putchar('\n');
 	return (0);
