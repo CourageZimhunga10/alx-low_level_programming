@@ -1,5 +1,5 @@
 # 0x00. C - Hello, World
-Introduction to C output to standard ouputs and C compilation.
+Introduction to C output to standard ouput and C compilation.
 
 ## The C library function puts()
 **int puts(const char *str)**
