@@ -2,7 +2,7 @@
 C programming concepts covered;
  - Identifiers and keywords.
  - Conditional statements if, if else, if elseif.
- - Operators +, -, /, *
+ - Operators Arithmentic; +, -, /, *, % Condition operators; ==, >, <, !=, >=, <= Logical operators; &, ||, !
  - Loops while.
 
 ##  [0-positive_or_negative.c](https://github.com/MosesSoftEng/alx-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c)
