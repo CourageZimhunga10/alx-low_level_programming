@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - Program that prints all possible different combinations of two
- * digits
+ * main - Program that prints combinations of two digits
  *
  * Description: program that prints all possible combinations
  * of double-digit numbers from the ANSI character set.
+ *
  * Return: Always 0
  */
 int main(void)
