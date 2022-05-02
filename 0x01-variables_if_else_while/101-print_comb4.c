@@ -20,15 +20,9 @@ int main(void)
 			digit_three = '0';
 			while (digit_three <= '9') /* Child loop for second digit */
 			{
-				/* Prevent repeating combinations e.g 001, 010, 100 */
-				if (digit_one > digit_two || digit_two > digit_three)
-				{
-					digit_three++;
-					continue;
-				}
-
-				/* Prevent sawme digit */
-				if (digit_one == digit_two || digit_two == digit_three)
+				/* Prevent repeating combinations and same digits*/
+				if (digit_one > digit_two || digit_two > digit_three ||
+				digit_one == digit_two || digit_two == digit_three)
 				{
 					digit_three++;
 					continue;
@@ -44,16 +38,12 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-
 				digit_three++;
 			}
-
 			digit_two++;
 		}
-
 		digit_one++;
 	}
-
 	putchar('\n');
 	return (0);
 }
