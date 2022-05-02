@@ -6,7 +6,6 @@
 ## 0x01. C - Variables, if, else, while
  - Keywords, identifiers, Conditional statements if else, Operators, while loops
 
-
 ## 0x0A-argc_argv
 - argc and argv parameters in c.
 
