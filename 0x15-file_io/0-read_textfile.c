@@ -38,16 +38,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/* Open file in read only using the oflag O_RDONLY */
 	file_descriptor = open(filename, O_RDONLY);
 
-	/* File check */
-	if (!file_descriptor)
-		return (0);
-
 	/* Read the file*/
-	read_bytes = read(file_descriptor, str, letters)
+	read_bytes = read(file_descriptor, str, letters);
 
 	/* Output to standard output*/
 	written_bytes = write(STDOUT_FILENO, str, letters);
-	if (read_bytes == -1 || written_bytes == -1)
+	if (read_bytes == -1 || written_bytes == -1 || file_descriptor == -1)
 		return (0);
 
 	if (read_bytes != written_bytes)
