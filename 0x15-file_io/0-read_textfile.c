@@ -43,6 +43,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/* Output to standard output*/
 	written_bytes = write(STDOUT_FILENO, buffer, letters);
 
+	/* Check for fails*/
 	if (read_bytes == -1 || written_bytes == -1 || file_descriptor == -1
 	 || read_bytes != written_bytes)
 	{
