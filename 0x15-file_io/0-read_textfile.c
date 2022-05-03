@@ -22,6 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	/* Declarations */
 	size_t file_descriptor;
+	ssize_t read_bytes;
 	ssize_t written_bytes;
 	char *str;
 
@@ -43,7 +44,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	/* Read the file*/
-	file_descriptor = read(file_descriptor, str, letters);
+	read_bytes = read(file_descriptor, str, letters);
+	if(read_bytes == -1)
+		return (0);
 
 	/* Output to standard output*/
 	written_bytes = write(STDOUT_FILENO, str, letters);
