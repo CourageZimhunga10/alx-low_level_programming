@@ -20,29 +20,42 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t o, r, w;
+	/* Declarations */
+	ssize_t file_descriptor, read_bytes, written_bytes;
 	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
+	/* Dynamic allocation for string to be written*/
 	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
+
+	/*Check to avoid avoid segmentation fault*/
+	if (!buffer)
 		return (0);
 
-	o = open(filename, O_RDONLY);
-	r = read(o, buffer, letters);
-	w = write(STDOUT_FILENO, buffer, r);
+	/* Open file in read only using the oflag O_RDONLY */
+	file_descriptor = open(filename, O_RDONLY);
 
-	if (o == -1 || r == -1 || w == -1 || w != r)
+	/* Read the file*/
+	read_bytes = read(file_descriptor, buffer, letters);
+
+	/* Output to standard output*/
+	written_bytes = write(STDOUT_FILENO, buffer, letters);
+
+	if (read_bytes == -1 || written_bytes == -1 || file_descriptor == -1
+	 || read_bytes != written_bytes)
 	{
 		free(buffer);
+		close(file_descriptor);
 		return (0);
 	}
 
+	/* Close file descriptor */
+	close(file_descriptor);
+
+	/* Free memory to avoid memory leak */
 	free(buffer);
-	close(o);
 
-	return (w);
+	return (written_bytes);
 }
-
