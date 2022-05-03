@@ -1,13 +1,5 @@
 #include "main.h"
 
-/*Library for open system call man open*/
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-
-/*Library for close and write system call man close*/
-#include <unistd.h>
-
 /**
  * read_textfile - Function that reads a text file and prints it
  *
