@@ -21,8 +21,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	/* Declarations */
-	size_t file_descriptor;
-	ssize_t read_bytes, written_bytes;
+	ssize_t file_descriptor, read_bytes, written_bytes;
 	char *str;
 
 	/* Dynamic allocation for string to be written*/
