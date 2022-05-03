@@ -51,3 +51,7 @@ The C preprocessor.
  - bit operators.
 
 ## [0x15. C - File I/O :open_file_folder:](0x15-file_io)
+ - File descriptor
+ - Posix
+ - System calls; open, write, read and close
+ 
