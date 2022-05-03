@@ -49,3 +49,6 @@ The C preprocessor.
 ## 0x14. C - Bit manipulation
  - Decimal, binary, octal and hexadecimal number systems.
  - bit operators.
+
+## (0x15. C - File I/O :open_file_folder:)[0x15-file_io]
+
