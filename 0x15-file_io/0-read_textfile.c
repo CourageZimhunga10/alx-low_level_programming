@@ -21,7 +21,8 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	/* Declarations */
-	ssize_t file_descriptor;
+	size_t file_descriptor;
+	ssize_t written_bytes;
 	char *str;
 
 	/* Dynamic allocation for string to be written*/
@@ -45,7 +46,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	file_descriptor = read(file_descriptor, str, letters);
 
 	/* Output to standard output*/
-	write(STDOUT_FILENO, str, letters);
+	written_bytes = write(STDOUT_FILENO, str, letters);
+	if (written_bytes < (ssize_t) letters)
+		return (0);
 
 	/* Close file descriptor */
 	close(file_descriptor);
@@ -53,5 +56,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/* Free memory to avoid memory leak */
 	free(str);
 
-	return (file_descriptor);
+	return (written_bytes);
 }
