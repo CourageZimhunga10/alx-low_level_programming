@@ -10,7 +10,7 @@ int main(void)
 {
     unsigned int n;
 
-    n = binary_to_uint("1110");
+    n = binary_to_uint("10101");
     printf("%u\n", n);
 
     return (0);
