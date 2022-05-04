@@ -39,7 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (read_bytes == -1 || written_bytes == -1 || file_descriptor == -1
 	 || read_bytes != written_bytes)
 	{
-		free(buffer);
+		free(buffer); 
 		close(file_descriptor);
 		return (0);
 	}
