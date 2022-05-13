@@ -1,21 +1,26 @@
+#include <stdio.h>
+#include "_getenv.h"
+
 /**
- * _strcomp.c - A function to compare two strings if they are same
+ * _strcomp - check if two strings are the same.
  *
- * @s1 - first string to compare
- * @s2 - second string to comapre with s1
+ * @str1: First string
+ * @str2: Second string
  *
- * Return: 1 if s1 and s2 match, otherwise 0
+ * Return: 1 if strings match, 0 otherwise 
  */
-int _strcmp(char *s1, const char *s2)
+int _strcomp(char *str1, char *str2)
 {
-	while (*s1 && *s2 && *s1 == *s2)
+	if(str1 == NULL || str2 == NULL)
+		return (0);
+
+	while(*str1 && *str2)
 	{
-		s1++;
-		s2++;
+		if(*str1 != *str2)
+			return (0);
+		str1++;
+		str2++;
 	}
 
-	if((*s1 - *s2) == 0)
-		return (1);
-
-	return (0);
+	return (1);
 }

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "_which.h"
 
 /**
  * _puts - prints passed string to stdout.

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * split_string_to_array
+ * split_string_to_string_array
  *
  * @str: string to split
  * @delimiter: String to use to split string

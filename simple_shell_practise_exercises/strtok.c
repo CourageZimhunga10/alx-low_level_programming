@@ -5,7 +5,7 @@
  * gcc -Wall -pedantic -Werror -Wextra -std=gnu89 strtok.c -o strtok && ./strtok
  */
 
-char ** split_string(char str_p[])
+char **split_string(char str_p[])
 {
 	/* char str[] = "Geeks-for-Geeks"; */
 	char* token;
