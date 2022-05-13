@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	/* Dynamic allocation for string to be written*/
+	/* Dynamic memory allocation for string, reserve space */
 	buffer = malloc(sizeof(char) * letters);
 
 	/*Check to avoid avoid segmentation fault*/
