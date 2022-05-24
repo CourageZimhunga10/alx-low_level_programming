@@ -6,6 +6,14 @@ Concepts covered;
 - Scope in programming is the part of code a enttiy can be referenced or manipulated.
 - Header files. a file that contains C function declarations and macro definitions to be shared between several source files.
 
+gcc flags meaning
+- Wall, enables all the warnings about constructions.
+- Werror, make all warnings into errors.
+- Wextra, enables some extra warning flags that are not enabled by
+           -Wall. 
+- pedantic, Issue all the warnings demanded by strict ISO C and ISO C++
+- std=gnu89, set the language standard to gnu89 a GNU dialect of ISO C90
+
 ## # Tasks :computer:
 ## 0-putchar.c
 Write a program that prints _putchar, followed by a new line.
