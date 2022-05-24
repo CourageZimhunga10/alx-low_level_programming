@@ -8,9 +8,13 @@
  */
 int print_last_digit(int n)
 {
-	int last_digit = _abs(n % 10);
+	n %= 10;
 
-	_putchar('0' + last_digit);
+	/* Make absolute */
+	if (n < 0)
+		n *= -1;
 
-	return (last_digit);
+	_putchar('0' + n);
+
+	return (n);
 }
