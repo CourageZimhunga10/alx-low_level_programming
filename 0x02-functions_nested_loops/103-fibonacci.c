@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the sum of even-valued Fibonacci sequence
- *        terms not exceeding 4000000.
+ * main - Prints the sum of even-valued Fibonacci numbers below 4000000
  *
  * Return: Always 0.
  */
@@ -23,6 +22,7 @@ int main(void)
 		f1 = f2;
 		f2 = f_sum;
 	}
+	
 	printf("%.0f\n", sum);
 
 	return (0);
