@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "_which.h"
+#include "_setenv.h"
 
 /**
  * _strconcat - Join two strings.

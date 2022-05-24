@@ -1,22 +1,19 @@
 #include "_which.h"
+#include "_strtok.h"
 
 /**
- * _strlen - Gets length of passed string
+ * _strlen - Gets length of a string
  *
- * @s: Pointer to a String
+ * @str: Pointer to a String
  *
- * Return: The length of @s
+ * Return: The length of @str
  */
-int _strlen(char *s)
+int _strlen(char *str)
 {
 	int i = 0;
-	char c = s[0];
-
-	while (c != '\0')
-	{
-		i++;
-		c = s[i];
-	}
-
+	/* Prefix increment i while checking if */
+	/* default pointer does not point to \0 */
+	while (str[++i])
+		;
 	return (i);
 }

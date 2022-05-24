@@ -1,5 +1,8 @@
 #include <stdio.h>
+
 #include "_getenv.h"
+#include "_setenv.h"
+#include "_unsetenv.h"
 
 /**
  * _strcomp - check if two strings are the same.

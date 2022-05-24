@@ -3,11 +3,12 @@ C programming concepts covered;
  - Identifiers and keywords.
  - Conditional statements if, if else, if elseif.
  - Operators Arithmentic; +, -, /, *, % Condition operators; ==, >, <, !=, >=, <= Logical operators; &, ||, ! Increment and Decrement Operators.
- - Loops while, continue, nested loops.
+ - Loops while, for, continue, nested loops.
  - ANSI character set.
  - Escape Sequences \n
 
-##  [0-positive_or_negative.c](0-positive_or_negative.c)
+# Tasks :computer:
+## [0-positive_or_negative.c](0-positive_or_negative.c)
 This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number stored in the variable n is positive or negative.
  - You can find the source code here
  - The variable n will store a different value every time you will run this program
@@ -69,7 +70,6 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
 
 ## [5-print_numbers.c](5-print_numbers.c)
 Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
-
  - All your code should be in the main function
 
 ## [6-print_numberz.c](6-print_numberz.c)
