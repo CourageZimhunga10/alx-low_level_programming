@@ -2,21 +2,21 @@
 
 /**
  * jack_bauer - Prints every minute of the day of
- *              Jack Bauer, starting from 00:00 to 23:59.
+ *              Jack Bauer, starting from 00:00 to 23:59
  */
 void jack_bauer(void)
 {
-	int hour, minute;
+	int hrs, mins;
 
-	for (hour = 0; hour <= 23; hour++)
+	for (hrs = 0; hrs <= 23; hrs++)
 	{
-		for (minute = 0; minute <= 59; minute++)
+		for (mins = 0; mins <= 59; mins++)
 		{
-			_putchar((hour / 10) + '0');
-			_putchar((hour % 10) + '0');
+			_putchar('0' + (hrs / 10) );
+			_putchar('0' + (hrs % 10) );
 			_putchar(':');
-			_putchar((minute / 10) + '0');
-			_putchar((minute % 10) + '0');
+			_putchar('0' + (mins / 10) );
+			_putchar('0' + (mins % 10) );
 			_putchar('\n');
 		}
 	}
