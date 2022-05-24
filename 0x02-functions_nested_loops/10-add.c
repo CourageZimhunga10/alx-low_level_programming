@@ -1,9 +1,9 @@
 /**
- * add - adds two integers.
+ * add - Adds two integers
  * @a: an integer
  * @b: an integer
  *
- * Return: Sum of integers passed into function.
+ * Return: Sum of @a and @b
  */
 int add(int a, int b)
 {
