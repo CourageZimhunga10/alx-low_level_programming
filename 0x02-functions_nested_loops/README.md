@@ -1,5 +1,12 @@
 # Functions, nested loops
+Concepts covered; 
+- Function. A block of code/ group of statements that performs a task.
+- Function prototype. A declaration of a function that specifies the function’s name and type signature (parameters and return types).
+- Nested loops. A loop inside another loop i.e. a child loop.
+- Scope in programming is the part of code a enttiy can be referenced or manipulated.
+- Header files. a file that contains C function declarations and macro definitions to be shared between several source files.
 
+## # Tasks :computer:
 ## 0-putchar.c
 Write a program that prints _putchar, followed by a new line.
     The program should return 0
