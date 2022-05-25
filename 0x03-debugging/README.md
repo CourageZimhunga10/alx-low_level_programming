@@ -10,7 +10,7 @@ Debugging Techniques;
 3. Using a debugger for interactive debugging, using breakpoints to pause code execution and watchers to see variable values.
 
 ## :computer: Tasks
-## 0-main.c, main.h
+## [0-main.c](0-main.c), [main.h](main.h)
 In most projects, we often give you only one main file to test with. For example, this main file is a test for a postitive_or_negative() function similar to the one you worked with in an earlier C project:
 
 `carrie@ubuntu:/debugging$ cat main.c
