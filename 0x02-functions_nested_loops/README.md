@@ -1,4 +1,4 @@
-# Functions, nested loops
+# :book: Functions, nested loops
 Concepts covered; 
 - Function. A block of code/ group of statements that performs a task.
 - Function prototype. A declaration of a function that specifies the function’s name and type signature (parameters and return types).
@@ -13,7 +13,7 @@ gcc flags meaning;
 - pedantic, Issue all the warnings demanded by strict ISO C and ISO C++.
 - std=gnu89, set the language standard to gnu89 a GNU dialect of ISO C90.
 
-## # Tasks :computer:
+## :computer: Tasks
 ## [0-putchar.c](0-putchar.c)
 Write a program that prints _putchar, followed by a new line.
  - The program should return 0
