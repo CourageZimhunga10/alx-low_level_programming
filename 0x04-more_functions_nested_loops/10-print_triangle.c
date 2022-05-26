@@ -7,23 +7,20 @@
  */
 void print_triangle(int size)
 {
-	int h, i;
+	int i = 0, j;
 
-	if (size > 0)
+	while (i < size)
 	{
-		for (h = 1; h <= size; h++)
-		{
-			for (i = size - h; i > 0; i--)
-				_putchar(' ');
+		/* Print spaces */
+		for (j = (size - i); j > 1; j--)
+			_putchar(' ');
 
-			for (i = 0; i < h; i++)
-				_putchar('#');
+		for (j = 0; j <= i; j++)
+			_putchar('#');
 
-			if (h == size)
-				continue;
-
+		/* Do not print last \n */
+		if (++i < size)
 			_putchar('\n');
-		}
 	}
 
 	_putchar('\n');
