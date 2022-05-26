@@ -16,7 +16,7 @@ void print_diagonal(int n)
 		_putchar('\\');
 
 		/* Do not print last \n */
-		if(i < n)
+		if (i < n)
 			_putchar('\n');
 	}
 
