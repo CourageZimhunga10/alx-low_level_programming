@@ -13,7 +13,7 @@ gcc flags meaning;
 - pedantic, Issue all the warnings demanded by strict ISO C and ISO C++.
 - std=gnu89, set the language standard to gnu89 a GNU dialect of ISO C90.
 
-## :computer: Tasks
+# :computer: Tasks
 ## [0-putchar.c](0-putchar.c)
 Write a program that prints _putchar, followed by a new line.
  - The program should return 0
@@ -137,7 +137,7 @@ Write a program that finds and prints the first 98 Fibonacci numbers, starting w
 
  > betty 104-fibonacci.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 104-fibonacci.c -o 104-fibonacci; ./104-fibonacci
 
-## References
+# References
 1. [ANSI character set](http://www.alanwood.net/demos/ansi.html])
 
    
