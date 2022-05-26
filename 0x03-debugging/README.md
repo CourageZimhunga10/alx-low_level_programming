@@ -23,12 +23,12 @@ In most projects, we often give you only one main file to test with. For example
 
 int main(void)
 {
- -  - int i;
+    int i;
 
- -  - i = 98;
- -  - positive_or_negative(i);
+    i = 98;
+    positive_or_negative(i);
 
- -  - return (0);
+    return (0);
 }
 carrie@ubuntu:/debugging$
 ```
