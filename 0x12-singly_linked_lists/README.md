@@ -1,9 +1,8 @@
 # 0x12. C - Singly linked lists
-A linked list is a linear data structure that includes a series of connected nodes. 
-Each node stores the data and the address of the next node.
+A dynamic linear data structure in which data objects called nodes are linked using references/ pointer/ address. Each node stores a data and a reference to the next node. The first node is called a Head which in an empty list and has a null reference. The last node has a null reference always. Data may be stored in different part of memory. The size/ number of nodes can grow or shrink.
 
 ![Linked list Data Structure](https://cdn.programiz.com/sites/tutorial2program/files/linked-list-concept.png)
-__Linked list Data Structure__
+_Linked list Data Structure_
 
 # Tasks
 ##  0-print_list.c
