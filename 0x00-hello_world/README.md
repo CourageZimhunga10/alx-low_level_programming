@@ -15,7 +15,7 @@ The C library function int printf(const char *format, ...) sends formatted outpu
 ## C sizeof operator
 A compile-time unary operator and used to compute the size of its operand. 
 
-__Example__
+_Example_
 Double quotation mark	\"
 
 ## C system call write()
