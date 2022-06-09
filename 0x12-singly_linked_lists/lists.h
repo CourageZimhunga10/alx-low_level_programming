@@ -24,4 +24,4 @@ typedef struct list_s
 	list_t *add_node(list_t **head, const char *str);
 	list_t *add_node_end(list_t **head, const char *str);
 	void free_list(list_t *head);
-#endif /* LISTS_H */
+#endif
