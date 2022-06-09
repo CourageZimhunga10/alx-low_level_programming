@@ -295,6 +295,8 @@ julien@ubuntu:~/0x12. Singly linked lists$ ./d
 julien@ubuntu:~/0x12. Singly linked lists$ 
  ```
 
+ > betty 3-add_node_end.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_node_end.c 0-print_list.c -o d; ./d
+
  ## 4-free_list.c
  Write a function that frees a list_t list.
  - Prototype: void free_list(list_t *head);
