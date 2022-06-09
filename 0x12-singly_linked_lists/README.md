@@ -1,8 +1,13 @@
 # :book: 0x12. C - Singly linked lists
+## Singly linked lists
 A dynamic linear data structure in which data objects called nodes are linked using references/ pointer/ address. Each node stores a data and a reference to the next node. The first node is called a Head which in an empty list and has a null reference. The last node has a null reference always. Data may be stored in different part of memory. The size/ number of nodes can grow or shrink.
 
 ![Linked list Data Structure](https://cdn.programiz.com/sites/tutorial2program/files/linked-list-concept.png)
 _Linked list Data Structure_
+
+## GCC specific attribute Syntax
+__attribute__((constructor))
+This particular GCC syntax, when used with a function, executes the same function at the startup of the program, i.e before main() function.
 
 # :computer: Tasks
 ## [0-print_list.c](0-print_list.c)
@@ -300,10 +305,85 @@ julien@ubuntu:~/0x12. Singly linked lists$
  ## 4-free_list.c
  Write a function that frees a list_t list.
  - Prototype: void free_list(list_t *head);
+ ```
+ julien@ubuntu:~/0x12. Singly linked lists$ cat 4-main.c
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 
- ## 100-first.c
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    list_t *head;
+
+    head = NULL;
+    add_node_end(&head, "Bob");
+    add_node_end(&head, "&");
+    add_node_end(&head, "Kris");
+    add_node_end(&head, "love");
+    add_node_end(&head, "asm");
+    print_list(head);
+    free_list(head);
+    head = NULL;
+    return (0);
+}
+julien@ubuntu:~/0x12. Singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e
+julien@ubuntu:~/0x12. Singly linked lists$ valgrind ./e
+==3598== Memcheck, a memory error detector
+==3598== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==3598== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==3598== Command: ./e
+==3598== 
+[6] Bob
+[1] &
+[3] Kris
+[4] love
+[3] asm
+==3598== 
+==3598== HEAP SUMMARY:
+==3598==     in use at exit: 0 bytes in 0 blocks
+==3598==   total heap usage: 11 allocs, 11 frees, 1,166 bytes allocated
+==3598== 
+==3598== All heap blocks were freed -- no leaks are possible
+==3598== 
+==3598== For counts of detected and suppressed errors, rerun with: -v
+==3598== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+julien@ubuntu:~/0x12. Singly linked lists$ 
+ ```
+
+ > betty 4-free_list.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e; valgrind ./e
+
+## [100-first.c](100-first.c)
  Write a function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed.
  - You are allowed to use the printf function
+ ```
+ julien@ubuntu:~/0x12. Singly linked lists$ cat 100-main.c
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
+    return (0);
+}
+julien@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-first.c -o first
+julien@ubuntu:~/$ ./first 
+You're beat! and yet, you must allow,
+I bore my house upon my back!
+(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)
+julien@ubuntu:~/$ 
+ ```
+
+> betty 100-first.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-first.c -o first; ./first
 
  ## 101-hello_holberton.asm
  Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
