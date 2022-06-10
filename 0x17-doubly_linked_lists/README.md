@@ -12,4 +12,7 @@
 > betty 2-add_dnodeint.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_dlistint.c -o a; ./a
 
 ## [3-add_dnodeint_end.c](3-add_dnodeint_end.c)
-> betty 3-add_dnodeint_end.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_dnodeint_end.c 0-print_dlistint.c -o d; ./d 
+> betty 3-add_dnodeint_end.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_dnodeint_end.c 0-print_dlistint.c -o d; ./d
+
+## [4-free_dlistint.c](4-free_dlistint.c)
+> betty 4-free_dlistint.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c -o e; ./e
