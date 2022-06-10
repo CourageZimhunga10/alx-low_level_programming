@@ -7,3 +7,6 @@
 
 ## [1-dlistint_len.c](1-dlistint_len.c)
 > betty 1-dlistint_len.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-dlistint_len.c -o b; ./b
+
+## [2-add_dnodeint.c](2-add_dnodeint.c)
+> betty 2-add_dnodeint.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_dlistint.c -o a; ./a
