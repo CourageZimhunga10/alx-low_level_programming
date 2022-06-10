@@ -20,4 +20,6 @@
 ## [6-sum_dlistint.c](6-sum_dlistint.c)
 > betty 4-free_dlistint.c; gcc -Wall -pedantic -Werror -Wextra 6-main.c -std=gnu89 3-add_dnodeint_end.c 4-free_dlistint.c 6-sum_dlistint.c -o i; ./i
 
+## ## [7-insert_dnodeint.c](7-insert_dnodeint.c)
+> betty 4-free_dlistint.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 2-add_dnodeint.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 7-insert_dnodeint.c -o j; ./j
 
