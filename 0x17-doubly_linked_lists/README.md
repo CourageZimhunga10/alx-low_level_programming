@@ -17,5 +17,7 @@
 ## [4-free_dlistint.c](4-free_dlistint.c)
 > betty 4-free_dlistint.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c -o e; ./e
 
-## [5-get_dnodeint.c](5-get_dnodeint.c)
-> betty 4-free_dlistint.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 5-get_dnodeint.c -o h; ./h
+## [6-sum_dlistint.c](6-sum_dlistint.c)
+> betty 4-free_dlistint.c; gcc -Wall -pedantic -Werror -Wextra 6-main.c -std=gnu89 3-add_dnodeint_end.c 4-free_dlistint.c 6-sum_dlistint.c -o i; ./i
+
+
