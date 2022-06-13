@@ -3,4 +3,4 @@
 ## libdynamic.so, main.h
 
 ## 
-> gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -fpic *.c; gcc -shared -o libdynamic.so *.o
+> gcc -c -Wall -Werror -Wextra -pedantic -std=gnu89 -fpic *.c; gcc -shared -o libdynamic.so *.o
