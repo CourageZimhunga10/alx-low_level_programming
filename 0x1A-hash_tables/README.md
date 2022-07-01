@@ -10,5 +10,7 @@ betty 0-hash_table_create.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-ma
 betty 1-djb2.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-djb2.c -o b; ./b
 
 ## 2-key_index.c
-betty 2-key_index.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 1-djb2.c 2-key_index.c -o c; ./c 
+betty 2-key_index.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 1-djb2.c 2-key_index.c -o c; ./c
 
+## 3-hash_table_set.c
+betty 3-hash_table_set.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c -o d; ./d
