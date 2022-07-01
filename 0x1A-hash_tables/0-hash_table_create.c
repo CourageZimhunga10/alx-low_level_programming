@@ -4,11 +4,11 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_create - Creates a hash table.
- * @size: The size of the array.
+ * hash_table_create - Creates a hash table
+ * @size: Size of the array
  *
- * Return: If an error occurs - NULL.
- *         Otherwise - a pointer to the new hash table.
+ * Return: NULL , If error occurs, Otherwise a pointer to the
+ * new hash table
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
@@ -21,8 +21,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	ht->size = size;
 	ht->array = malloc(sizeof(hash_node_t *) * size);
+
 	if (ht->array == NULL)
 		return (NULL);
+
 	for (i = 0; i < size; i++)
 		ht->array[i] = NULL;
 
