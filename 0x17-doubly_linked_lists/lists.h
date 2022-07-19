@@ -1,4 +1,4 @@
-/* Preporcessor directive to chec kif MACRO is not defined by #define*/
+/* Preporcessor directive to check if MACRO is not defined by #define*/
 #ifndef LISTS_H
 #define LISTS_H
     #include <stdio.h>

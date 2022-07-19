@@ -1,24 +1,24 @@
 #include <stdio.h>
 
 /**
- * print_array - Prints an inputted number of elements
- *               of an array of integers.
+ * print_array - Prints elements of an array of integers
  *
- * @a: The array of integers.
- * @n: The number of elements to be printed.
+ * @a: Array of integers
+ * @n: Number of elements to print
  */
 void print_array(int *a, int n)
 {
-	int index;
+	int i;
 
-	for (index = 0; index < n; index++)
+	/* Use for loop as we know number of iterations */
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", a[index]);
+		printf("%d", a[i]);
 
-		if (index == n - 1)
-			continue;
-
-		printf(", ");
+		/* If at last element, do not print comma */
+		if (i != n - 1)
+			/* Print comma */
+			printf(", ");
 	}
 
 	printf("\n");

@@ -2,6 +2,7 @@
 
 /**
  * print_dlistint - print elements of doubly linked list
+ *
  * @h: the head of list
  * Return: number of nodes
  */
