@@ -22,3 +22,10 @@ make -f 3-Makefile; ./school
 make -f 4-Makefile; ./school
 
 ## 5. Island Perimeter
+
+chmod +x tests/5-main.py
+./tests/5-main.py
+
+## 6. make -f 100-Makefile
+
+make -f 100-Makefile; ./school
