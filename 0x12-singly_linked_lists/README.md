@@ -73,7 +73,7 @@ julien@ubuntu:~/0x12. Singly linked lists$ ./a
 julien@ubuntu:~/0x12. Singly linked lists$ 
  ```
 
- > betty 0-print_list.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a; ./a
+ > betty 0-print_list.c; gcc -Wall -pedantic -Werror -Wextra -std=gnu89 tests/0-main.c 0-print_list.c -o tests/a; ./tests/a
 
 
 ## [1-list_len.c](1-list_len.c)
