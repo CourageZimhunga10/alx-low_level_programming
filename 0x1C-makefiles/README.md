@@ -4,3 +4,7 @@
 ## 0. make -f 0-Makefile
 
 make -f 0-Makefile; ./school
+
+## 1. make -f 1-Makefile 
+
+make -f 1-Makefile; ./school
