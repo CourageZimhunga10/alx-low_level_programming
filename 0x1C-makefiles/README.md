@@ -8,3 +8,9 @@ make -f 0-Makefile; ./school
 ## 1. make -f 1-Makefile 
 
 make -f 1-Makefile; ./school
+
+## 2. make -f 2-Makefile 
+
+make -f 2-Makefile; ./school
+
+## 
