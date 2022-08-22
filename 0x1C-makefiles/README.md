@@ -13,4 +13,8 @@ make -f 1-Makefile; ./school
 
 make -f 2-Makefile; ./school
 
+## 3. make -f 3-Makefile 
+
+make -f 3-Makefile; ./school
+
 ## 
