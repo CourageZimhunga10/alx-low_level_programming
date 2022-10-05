@@ -15,6 +15,7 @@ Create header file
 ```bash
 touch search_algos.h
 chmod +x search_algos.h
+betty search_algos.h
 ```
 
 # :computer: Tasks
@@ -25,6 +26,12 @@ Write a function that searches for a value in an array of integers using the Lin
 ```bash
 touch 0-linear.c
 chmod +x 0-linear.c
+betty 0-linear.c
+
+# Test
+chmod +x tests/0-main.c
+
+betty 0-linear.c; betty search_algos.h; gcc -Wall -Wextra -Werror -pedantic -std=gnu89 tests/0-main.c 0-linear.c -o 0-linear; ./0-linear 
 ```
 
 # Referenceces
