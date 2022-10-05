@@ -29,41 +29,25 @@ int binary_search(
 		__attribute__ ((unused))size_t size,
 		__attribute__ ((unused))int value)
 {
-	size_t i, low_i, high_i, mid_i;
+	size_t i, left, right;
 
-	/* Check aganist undefined array */
 	if (array == NULL)
 		return (-1);
 
-	low_i = 0;
-	high_i = size - 1;
-
-	for (i = 0; i < size; i++)
+	for (left = 0, right = size - 1; right >= left;)
 	{
-		size_t j;
-
-		mid_i = (low_i + high_i) / 2;
-
 		printf("Searching in array: ");
+		for (i = left; i < right; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
 
-		for (j = low_i; j < high_i + 1; j++)
-		{
-			printf("%ld", j);
-			if (j != high_i)
-				printf(", ");
-		}
-
-		printf("\n");
-
-		if (array[mid_i] == value)
-			return (mid_i);
-		else if (array[mid_i] < value)
-			low_i = mid_i + 1;
-		else if (array[mid_i] > value)
-			high_i = mid_i - 1;
-
-		if (mid_i == size - 1)
-			break;
+		i = left + (right - left) / 2;
+		if (array[i] == value)
+			return (i);
+		if (array[i] > value)
+			right = i - 1;
+		else
+			left = i + 1;
 	}
 
 	return (-1);
