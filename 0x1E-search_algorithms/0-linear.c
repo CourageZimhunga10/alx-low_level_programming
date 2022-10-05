@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "search.h"
 
 /**
@@ -10,7 +11,29 @@
  *
  * Return: the first index where value is located. otherwise -1
  */
-int linear_search(int *array, size_t size, int value)
+/*
+ * Pseudocode
+ * 1. Loop each item in array
+ * 2.	If item is same as value, return value and end loop
+ */
+int linear_search(
+		__attribute__ ((unused))int *array,
+		__attribute__ ((unused))size_t size,
+		__attribute__ ((unused))int value)
 {
-	return (0);
+	size_t i;
+
+	/* Check aganist undefined array */
+	if (array == NULL)
+		return (-1);
+
+	for (i = 0; i < size; i++)
+	{
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+
+		if (array[i] == value)
+			return (i);
+	}
+
+	return (-1);
 }
