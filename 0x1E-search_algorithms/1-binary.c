@@ -50,5 +50,5 @@ int binary_search(
 			left = i + 1;
 	}
 
-	return (-1);	
+	return (-1);
 }
