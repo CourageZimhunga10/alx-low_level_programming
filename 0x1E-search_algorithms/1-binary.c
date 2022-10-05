@@ -38,7 +38,7 @@ int binary_search(
 	{
 		printf("Searching in array: ");
 		for (i = left; i < right; i++)
-			// printf("%d, ", array[i]);
+			printf("%d, ", array[i]);
 		// printf("%d\n", array[i]);
 
 		i = left + (right - left) / 2;
