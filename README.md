@@ -1,5 +1,7 @@
 # C Programming
 
+![test image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/298/aJPw3mw.jpg)
+
 ## 0x00. C - Hello, World
  - puts, printf, write functions, sizeof operator and C compilation.
 
