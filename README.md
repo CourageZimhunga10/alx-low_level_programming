@@ -1,4 +1,4 @@
-# Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
+# Low-Level Programming - Data Structures, Algorithms and C programming language.
 
 This repository contains programs written for the low-level programming and
 algorithm track at ALX Software Enginnering Program. Covered concepts;
